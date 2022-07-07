@@ -1,0 +1,59 @@
+{
+  "name": "h5_template",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint:pretty": "pretty-quick --staged",
+    "lint:stylelint": "stylelint --fix \"**/*.{tsx,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "lint:all": "npm run lint:eslint && npm run lint:stylelint",
+    "prepare": "node node_modules/husky-ci"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "vue": "^3.2.25"
+  },
+  "author": "cweb130@163.com",
+  "engines": {
+    "node": ">=14.18.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/node": "^18.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "cssnano": "^5.1.12",
+    "cssnano-preset-advanced": "^5.3.8",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-define-config": "^1.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "husky": "^8.0.1",
+    "husky-ci": "^1.0.7",
+    "lint-staged": "^13.0.3",
+    "pinia": "^2.0.14",
+    "postcss": "^8.4.14",
+    "postcss-import": "^14.1.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-order": "^5.0.0",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.9",
+    "vue-eslint-parser": "^9.0.3",
+    "vue-router": "^4.1.1",
+    "vue-tsc": "^0.34.7"
+  }
+}
